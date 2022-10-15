@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.option {
+  @apply p-4 border border-black cursor-pointer rounded-lg bg-white hover:brightness-95 hover:translate-y-[-.55rem] active:translate-y-[-.2rem] active:duration-75 active:brightness-90 transition-all duration-200 text-3xl;
+}
