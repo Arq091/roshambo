@@ -8,6 +8,6 @@
 
 @media (hover: hover) {
   .option {
-    @apply hover:brightness-95 hover:scale-110 hover:translate-y-[-.55rem]  hover:shadow-xl active:translate-y-[-.2rem] active:duration-75 active:brightness-90;
+    @apply hover:scale-110 hover:translate-y-[-.55rem] outline-black hover:shadow-xl active:translate-y-[-.2rem] active:duration-75 active:brightness-90;
   }
 }

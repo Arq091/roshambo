@@ -52,7 +52,9 @@ export default function App() {
     fetchData()
   }, [])
 
-  function getRandomItem(arr) {
+  // arr = [a, b, c] arr[0]
+
+  const getRandomItem = (arr) => {
     const randomIndex = Math.floor(Math.random() * arr.length)
     const item = arr[randomIndex]
     return item
