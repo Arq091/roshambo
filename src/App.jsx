@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import supabase from "./client"
+import sound from "./sound/sfx.mp3"
 
 export default function App() {
   const options = ["rock", "paper", "scissors"]
@@ -58,7 +59,14 @@ export default function App() {
     return item
   }
 
+  const playsound = () => {
+    const audio = new Audio(sound)
+    audio.currentTime = 0
+    audio.play()
+  }
+
   async function handleOption(option) {
+    playsound()
     const botOption = getRandomItem(options)
     setBotChose(botOption)
     setRoundsPlayed(roundsPlayed + 1)
